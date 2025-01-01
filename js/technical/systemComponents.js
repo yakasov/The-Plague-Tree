@@ -175,6 +175,7 @@ var systemComponents = {
 			</tr> 
 			<tr>
                 <td><button class="opt" onclick="changeNotation()">Notation: {{ player.notation }}</button></td>
+								<td><button class="opt" onclick="forceNaNFix()">Force NaN fix (at own risk!): {{ player.forceNaNFix?"ON":"OFF" }}</button></td>
 			</tr> 
         </table>`
     },

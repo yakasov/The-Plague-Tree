@@ -258,7 +258,11 @@ function NaNcheck(data) {
 			NaNcheck(data[item])
 		}
 		else if (data[item] !== data[item] || checkDecimalNaN(data[item])) {
-			if (!NaNalert) {
+			if (player.forceNaNFix && isNaN(data[item].layer)) {
+				data[item] = new Decimal(0);
+				console.warn(`Reset ${data[item]} to 0 from NaN`)
+			}
+			else if (!NaNalert) {
 				clearInterval(interval);
 				NaNalert = true;
 				alert("Invalid value found in player, named '" + item + "'. Please let the creator of this mod know! You can refresh the page, and you will be un-NaNed.")
