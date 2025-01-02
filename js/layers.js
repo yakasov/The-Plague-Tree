@@ -5962,7 +5962,7 @@ addLayer("uv", {
             }
         }
         if (inChallenge("ct",32)) {
-            if ((tmp.e.clickables[31].canClick || tmp.e.clickables[32].canClick ) && !player.Us.automut) dis += " (You can mutate!)"
+            if ((tmp.e.clickables[31].canClick || tmp.e.clickables[32].canClick ) && !player.Us.automut) dis += " (You can mutate! Go to Infectors -> RNA -> MMNA)"
         }
       return dis
     },
