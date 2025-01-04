@@ -5962,7 +5962,7 @@ addLayer("uv", {
             }
         }
         if (inChallenge("ct",32)) {
-            if ((tmp.e.clickables[31].canClick || tmp.e.clickables[32].canClick ) && !player.Us.automut) dis += " (You can mutate!)"
+            if ((tmp.e.clickables[31].canClick || tmp.e.clickables[32].canClick ) && !player.Us.automut) dis += " (You can mutate! Go to Infectors -> RNA -> MMNA)"
         }
       return dis
     },
@@ -53267,7 +53267,7 @@ addLayer("Us", {
                 player.Us.trnaTime[i] = Math.max(player.Us.trnaTime[i]-diff,0)
                 player.Us.cTime[i] = Math.max(player.Us.cTime[i]-diff,0)
             }
-            if (hasMilestone("Us",20) && player.Us.autosev && player.Us.maxCool==0) {
+            if (hasMilestone("Us",20) && player.Us.autosev) {
                 layers.Us.clickables[21].onClick()
             }
             if (hasMilestone("uv",10) && player.Us.autotrna && player.Us.trnaCool==0) {
@@ -53291,7 +53291,6 @@ addLayer("Us", {
             player.Us.rgain = ad.sub(player.Us.rgain).div(diff+0.00000000001)
         }
         player.Us.symptoms = s
-        player.Us.maxCool = Math.max(player.Us.maxCool-diff,0)
         player.Us.trnaCool = Math.max(player.Us.trnaCool-diff,0)
         player.Us.rrnaCool = Math.max(player.Us.rrnaCool-diff,0)
         player.Us.upgCool = Math.max(player.Us.upgCool-diff,0)
@@ -58142,15 +58141,14 @@ addLayer("Us", {
         },
         21: {
             display() {
-                return "<h2>Max All (X)</h2><br>Cooldown: "+formatTime(player.Us.maxCool)
+                return "<h2>Max All (X)</h2>"
             },
-            canClick() {return player.Us.maxCool == 0},
+            canClick() {return true},
             unlocked() { return hasUpgrade("uv",51) }, 
             onClick() {
                 for (i = 0; i < player.Us.sympBuy.length; i++){
                     layers.Us.buyables[player.Us.sympBuy[i]].buy()
                 }
-                player.Us.maxCool = tmp.uv.buyables[21].effect.toNumber()
             },
         },
         22: {
