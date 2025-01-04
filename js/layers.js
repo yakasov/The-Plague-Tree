@@ -7906,12 +7906,12 @@ addLayer("uv", {
             effect() { // Effects of owning x of the items, x is a decimal
                 let x = player.uv.buyables[21]
                 let i = tmp.uv.buyables[21].int
-                return Decimal.pow(0.7, x).mul(10).max(0.1).mul(Decimal.pow(0.9, x.sub(13).max(0))).max(i);
+                return Decimal.pow(0.6, x).mul(10).max(0.1).mul(Decimal.pow(0.9, x.sub(13).max(0))).max(i);
             },
             display() { // Everything else displayed in the buyable button after the title
                 if (player.tab != "uv" || player.subtabs.uv.mainTabs != "UnBoosted Viruses") return
                 let extra = ""
-                let dis = "Reduce 'Max All' severe symptoms cooldown by "+(player.uv.buyables[this.id].gte(13)?"10":"30")+"%"
+                let dis = "Reduce 'Max All' severe symptoms cooldown by "+(player.uv.buyables[this.id].gte(13)?"10":"40")+"%"
                 let i = tmp.uv.buyables[21].int
                 if (tmp[this.layer].buyables[this.id].effect.eq(i)) dis+= ' (MAXED)'
                 return dis + ".\n\
@@ -7974,12 +7974,12 @@ addLayer("uv", {
             effect() { // Effects of owning x of the items, x is a decimal
                 let x = player.uv.buyables[22]
                 let i = tmp.uv.buyables[22].int
-                return Decimal.pow(0.7, x).mul(15).max(0.1).mul(Decimal.pow(0.9, x.sub(15).max(0))).max(i);
+                return Decimal.pow(0.6, x).mul(15).max(0.1).mul(Decimal.pow(0.9, x.sub(15).max(0))).max(i);
             },
             display() { // Everything else displayed in the buyable button after the title
                 if (player.tab != "uv" || player.subtabs.uv.mainTabs != "UnBoosted Viruses") return
                 let extra = ""
-                let dis = "Reduce 'Max All' unvaxxed tRNA buyables cooldown by "+(player.uv.buyables[this.id].gte(15)?"10":"30")+"%"
+                let dis = "Reduce 'Max All' unvaxxed tRNA buyables cooldown by "+(player.uv.buyables[this.id].gte(15)?"10":"40")+"%"
                 let i = tmp.uv.buyables[22].int
                 if (tmp[this.layer].buyables[this.id].effect.eq(i)) dis+= ' (MAXED)'
                 return dis + ".\n\
@@ -8042,12 +8042,12 @@ addLayer("uv", {
             effect() { // Effects of owning x of the items, x is a decimal
                 let x = player.uv.buyables[23]
                 let i = tmp.uv.buyables[23].int
-                return Decimal.pow(0.7, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
+                return Decimal.pow(0.6, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
             },
             display() { // Everything else displayed in the buyable button after the title
                 if (player.tab != "uv" || player.subtabs.uv.mainTabs != "UnBoosted Viruses") return
                 let extra = ""
-                let dis = "Reduce US upgrade autobuyer cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"30")+"%"
+                let dis = "Reduce US upgrade autobuyer cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"40")+"%"
                 let i = tmp.uv.buyables[23].int
                 if (tmp[this.layer].buyables[this.id].effect.eq(i)) dis+= ' (MAXED)'
                 return dis + ".\n\
@@ -8110,12 +8110,12 @@ addLayer("uv", {
             effect() { // Effects of owning x of the items, x is a decimal
                 let x = player.uv.buyables[31]
                 let i = tmp.uv.buyables[31].int
-                return Decimal.pow(0.7, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
+                return Decimal.pow(0.6, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
             },
             display() { // Everything else displayed in the buyable button after the title
                 if (player.tab != "uv" || player.subtabs.uv.mainTabs != "UnBoosted Viruses") return
                 let extra = ""
-                let dis = "Reduce mRNA mutation autobuyer cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"30")+"%"
+                let dis = "Reduce mRNA mutation autobuyer cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"40")+"%"
                 let i = tmp.uv.buyables[31].int
                 if (tmp[this.layer].buyables[this.id].effect.eq(i)) dis+= ' (MAXED)'
                 return dis + ".\n\
@@ -8178,12 +8178,12 @@ addLayer("uv", {
             effect() { // Effects of owning x of the items, x is a decimal
                 let x = player.uv.buyables[32]
                 let i = tmp.uv.buyables[32].int
-                return Decimal.pow(0.7, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
+                return Decimal.pow(0.6, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
             },
             display() { // Everything else displayed in the buyable button after the title
                 if (player.tab != "uv" || player.subtabs.uv.mainTabs != "UnBoosted Viruses") return
                 let extra = ""
-                let dis = "Reduce tRNA mutation autobuyer cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"30")+"%"
+                let dis = "Reduce tRNA mutation autobuyer cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"40")+"%"
                 let i = tmp.uv.buyables[32].int
                 if (tmp[this.layer].buyables[this.id].effect.eq(i)) dis+= ' (MAXED)'
                 return dis + ".\n\
@@ -8246,12 +8246,12 @@ addLayer("uv", {
             effect() { // Effects of owning x of the items, x is a decimal
                 let x = player.uv.buyables[33]
                 let i = tmp.uv.buyables[33].int
-                return Decimal.pow(0.7, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
+                return Decimal.pow(0.6, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
             },
             display() { // Everything else displayed in the buyable button after the title
                 if (player.tab != "uv" || player.subtabs.uv.mainTabs != "UnBoosted Viruses") return
                 let extra = ""
-                let dis = "Reduce auto-reset cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"30")+"%"
+                let dis = "Reduce auto-reset cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"40")+"%"
                 let i = tmp.uv.buyables[33].int
                 if (tmp[this.layer].buyables[this.id].effect.eq(i)) dis+= ' (MAXED)'
                 return dis + ".\n\
@@ -8314,12 +8314,12 @@ addLayer("uv", {
             effect() { // Effects of owning x of the items, x is a decimal
                 let x = player.uv.buyables[41]
                 let i = tmp.uv.buyables[41].int
-                return Decimal.pow(0.7, x).mul(30).max(0.1).mul(Decimal.pow(0.9, x.sub(16).max(0))).max(i);
+                return Decimal.pow(0.6, x).mul(30).max(0.1).mul(Decimal.pow(0.9, x.sub(16).max(0))).max(i);
             },
             display() { // Everything else displayed in the buyable button after the title
                 if (player.tab != "uv" || player.subtabs.uv.mainTabs != "UnBoosted Viruses") return
                 let extra = ""
-                let dis = "Reduce 'Max All' mutated rRNA buyables cooldown by "+(player.uv.buyables[this.id].gte(16)?"10":"30")+"%"
+                let dis = "Reduce 'Max All' mutated rRNA buyables cooldown by "+(player.uv.buyables[this.id].gte(16)?"10":"40")+"%"
                 let i = tmp.uv.buyables[41].int
                 if (tmp[this.layer].buyables[this.id].effect.eq(i)) dis+= ' (MAXED)'
                 return dis + ".\n\
@@ -8382,12 +8382,12 @@ addLayer("uv", {
             effect() { // Effects of owning x of the items, x is a decimal
                 let x = player.uv.buyables[42]
                 let i = tmp.uv.buyables[42].int
-                return Decimal.pow(0.7, x).mul(30).max(0.1).mul(Decimal.pow(0.9, x.sub(16).max(0))).max(i);
+                return Decimal.pow(0.6, x).mul(30).max(0.1).mul(Decimal.pow(0.9, x.sub(16).max(0))).max(i);
             },
             display() { // Everything else displayed in the buyable button after the title
                 if (player.tab != "uv" || player.subtabs.uv.mainTabs != "UnBoosted Viruses") return
                 let extra = ""
-                let dis = "Reduce 'Max All' unvaxxed death buyables cooldown by "+(player.uv.buyables[this.id].gte(16)?"10":"30")+"%"
+                let dis = "Reduce 'Max All' unvaxxed death buyables cooldown by "+(player.uv.buyables[this.id].gte(16)?"10":"40")+"%"
                 let i = tmp.uv.buyables[42].int
                 if (tmp[this.layer].buyables[this.id].effect.eq(i)) dis+= ' (MAXED)'
                 return dis + ".\n\
@@ -8450,12 +8450,12 @@ addLayer("uv", {
             effect() { // Effects of owning x of the items, x is a decimal
                 let x = player.uv.buyables[43]
                 let i = tmp.uv.buyables[43].int
-                return Decimal.pow(0.7, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
+                return Decimal.pow(0.6, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
             },
             display() { // Everything else displayed in the buyable button after the title
                 if (player.tab != "uv" || player.subtabs.uv.mainTabs != "UnBoosted Viruses") return
                 let extra = ""
-                let dis = "Reduce UD upgrade autobuyer cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"30")+"%"
+                let dis = "Reduce UD upgrade autobuyer cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"40")+"%"
                 let i = tmp.uv.buyables[43].int
                 if (tmp[this.layer].buyables[this.id].effect.eq(i)) dis+= ' (MAXED)'
                 return dis + ".\n\
@@ -8518,12 +8518,12 @@ addLayer("uv", {
             effect() { // Effects of owning x of the items, x is a decimal
                 let x = player.uv.buyables[51]
                 let i = tmp.uv.buyables[51].int
-                return Decimal.pow(0.7, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
+                return Decimal.pow(0.6, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
             },
             display() { // Everything else displayed in the buyable button after the title
                 if (player.tab != "uv" || player.subtabs.uv.mainTabs != "UnBoosted Viruses") return
                 let extra = ""
-                let dis = "Reduce 'Max All' deadly mutation buyables cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"30")+"%"
+                let dis = "Reduce 'Max All' deadly mutation buyables cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"40")+"%"
                 let i = tmp.uv.buyables[51].int
                 if (tmp[this.layer].buyables[this.id].effect.eq(i)) dis+= ' (MAXED)'
                 return dis + ".\n\
@@ -8586,12 +8586,12 @@ addLayer("uv", {
             effect() { // Effects of owning x of the items, x is a decimal
                 let x = player.uv.buyables[52]
                 let i = tmp.uv.buyables[52].int
-                return Decimal.pow(0.7, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
+                return Decimal.pow(0.6, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
             },
             display() { // Everything else displayed in the buyable button after the title
                 if (player.tab != "uv" || player.subtabs.uv.mainTabs != "UnBoosted Viruses") return
                 let extra = ""
-                let dis = "Reduce 'Max All' deadly mutant buyables cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"30")+"%"
+                let dis = "Reduce 'Max All' deadly mutant buyables cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"40")+"%"
                 let i = tmp.uv.buyables[52].int
                 if (tmp[this.layer].buyables[this.id].effect.eq(i)) dis+= ' (MAXED)'
                 return dis + ".\n\
@@ -8652,12 +8652,12 @@ addLayer("uv", {
             effect() { // Effects of owning x of the items, x is a decimal
                 let x = player.uv.buyables[53]
                 let i = tmp.uv.buyables[53].int
-                return Decimal.pow(0.7, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
+                return Decimal.pow(0.6, x).mul(60).max(0.1).mul(Decimal.pow(0.9, x.sub(18).max(0))).max(i);
             },
             display() { // Everything else displayed in the buyable button after the title
                 if (player.tab != "uv" || player.subtabs.uv.mainTabs != "UnBoosted Viruses") return
                 let extra = ""
-                let dis = "Reduce 'Max All' deadly crow buyables cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"30")+"%"
+                let dis = "Reduce 'Max All' deadly crow buyables cooldown by "+(player.uv.buyables[this.id].gte(18)?"10":"40")+"%"
                 let i = tmp.uv.buyables[53].int
                 if (tmp[this.layer].buyables[this.id].effect.eq(i)) dis+= ' (MAXED)'
                 return dis + ".\n\
