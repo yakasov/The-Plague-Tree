@@ -7106,13 +7106,13 @@ addLayer("uv", {
         },
         74: {
             title: "UB16",
-            description() {return  "CRNA buyables boost CRNA gain at ^0.5 effect, CRNA exponent+0.5."},
-            cost: new Decimal(2e14),
+            description() {return  "CRNA buyables boost CRNA gain at ^0.75 effect, CRNA exponent+0.5."},
+            cost: new Decimal(1e14),
             currencyDisplayName: "UnBoosted Viruses",
             currencyInternalName: "virus",
             currencyLayer: "uv",
             effect(){
-                let eff = tmp.e.buyables[111].effect.mul(tmp.e.buyables[112].effect).mul(tmp.e.buyables[113].effect).pow(0.5)
+                let eff = tmp.e.buyables[111].effect.mul(tmp.e.buyables[112].effect).mul(tmp.e.buyables[113].effect).pow(0.75)
                 return eff
             },
             effectDisplay(){
