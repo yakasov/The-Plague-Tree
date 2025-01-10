@@ -6971,7 +6971,7 @@ addLayer("uv", {
             currencyInternalName: "virus",
             currencyLayer: "uv",
             effect(){
-                let eff = player.uv.times.div(20).add(1)
+                let eff = player.uv.times.div(10).add(1)
                 return eff
             },
             effectDisplay(){
@@ -7153,7 +7153,7 @@ addLayer("uv", {
         },
         81: { // Chungha = e3094937511
             title: "UB19",
-            description() {return  "Unlock auto-reset, double UnBoosted Virus gain per maxed autobuyer, UB13 exponent*2."},
+            description() {return  "Unlock auto-reset, triple UnBoosted Virus gain per maxed autobuyer, UB13 exponent*2."},
             cost: new Decimal(1e19),
             currencyDisplayName: "UnBoosted Viruses",
             currencyInternalName: "virus",
@@ -7163,7 +7163,7 @@ addLayer("uv", {
                 for (let a in player.uv.buyables) {
                     if (tmp.uv.buyables[a].effect.lte(0.1) && a<100) x ++
                 }
-                let Chungha = Decimal.pow(2,x)
+                let Chungha = Decimal.pow(3,x)
                 return Chungha
             },
             effectDisplay(){
