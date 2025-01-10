@@ -6971,7 +6971,7 @@ addLayer("uv", {
             currencyInternalName: "virus",
             currencyLayer: "uv",
             effect(){
-                let eff = player.uv.times.div(10).add(1)
+                let eff = player.uv.times.div(5).add(1)
                 return eff
             },
             effectDisplay(){
